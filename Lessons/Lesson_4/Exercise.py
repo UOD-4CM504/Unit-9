@@ -1,17 +1,21 @@
-class Pet:
-    """ A pet class """
+class Circle:
+    pi = 3.14159
 
-    # This is a method, it belongs to the instance of the pet created
-    def talk(self):
-        print("Hi, I am an instance of pet")
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return Circle.pi * self.radius ** 2
+
+    def circumference(self):
+        return 2 * Circle.pi * self.radius
 
 
 if __name__ == "__main__":
-    # create an instance of Pet
-    pet_one = Pet()
-    # create another instance of Pet
-    pet_two = Pet()
-    # call the method talks on the object pet_one
-    pet_one.talk()
-    # call the method talks on the object pet_two
-    pet_two.talk()
+    c = Circle(10)
+    print(c.area())
+    print(c.circumference())
+
+    c = Circle(5)
+    print(c.area())
+    print(c.circumference())
