@@ -1,21 +1,12 @@
 class Circle:
-    pi = 3.14159
-
-    def __init__(self, radius):
-        self.radius = radius
-
-    def area(self):
-        return Circle.pi * self.radius ** 2
-
-    def circumference(self):
-        return 2 * Circle.pi * self.radius
+    pass
 
 
 if __name__ == "__main__":
-    c = Circle(10)
-    print(c.area())
-    print(c.circumference())
+    c1 = Circle(10)  # create an instance of a Circle with radius 10
+    print(c1.area())
+    print(c1.circumference())
 
-    c = Circle(5)
-    print(c.area())
-    print(c.circumference())
+    c2 = Circle(5)  # create an instance of a Circle with radius 5
+    print(c2.area())
+    print(c2.circumference())
